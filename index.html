@@ -5,23 +5,137 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon.png">
+  <link rel="stylesheet" href="./css/animate.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/responsive.css">
   <title>Donut Clicker</title>
 </head>
 
 <body>
-  <div class="container">
-    <h1>Donut Clicker</h1>
-    <!-- <input type="text" id="name" placeholder="Enter a name">
-    <input type="text" id="description" placeholder="Enter a description"> -->
-    <button id="submit">Create a donut</button>
+  <section class="gallary section-padding" id="gallary" tabindex="-1">
+    <div class="text">
+      <h1 class="main-heading wow pulse">
+        <a href="/" title="RESTART"><img src="./images/donut.png" alt="donut logo img png">
+        <span>Donut Clicker</span></a>
+      </h1>
 
-    <section id="createDonut">
+    </div>
 
-    </section>
+  </section>
 
+  <section id="click-section" class="counter-section">
+    <div id="welcomeBaker">
+      <input id="bakerName" placeholder="Enter your name" required="required"> 
+      <input id="timeLast" type="number" placeholder="How long would you like to work [in min]">
+      <button id="createBakerBtn">Submit</button>
+    </div> 
+    <div class="container"> 
+      <div class="counter-area">
+        <div class="counter-place wow fadeInLeft" style="visibility: visible; animation-name: fadeInLeft;">
+          <i class="fas fa-history"></i>
+          <span class="counter-number-1" id = "numberOfDonuts">100</span>
+          <h3  class="infoBtn">Current Donuts</h3>
+        </div>
+        <div class="counter-place wow fadeInLeft" data-wow-delay="0.3s"
+          style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;">
+          <i class="far fa-laugh-beam"></i>
+          <span class="counter-number-2" id="numberOfClicks">0</span>
+          <h3>
+            <button id="generateDonut">Click</button>
+            <div class="infoBtn" id="generateDonutStop">Clicks</div>
+          </h3>
+        </div>
+        <div class="counter-place wow fadeInRight" data-wow-delay="0.6s"
+          style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInRight;">
+          <i class="fas fa-motorcycle"></i>
+          <span class="counter-number-3" id = "numberOfDonutClicker">0</span>
+          <h3>
+            <button id="buyDonutClicker">Buy Donut Clicker</button>
+            <div class="infoBtn" id="buyDonutClickerStop">Donut Clickers</div>
+          </h3>
+        </div>
+        <div class="counter-place wow fadeInRight" data-wow-delay="0.9s"
+          style="visibility: visible; animation-delay: 0.9s; animation-name: fadeInRight;">
+          <i class="fas fa-award"></i>
+          <span class="counter-number-4" id="numberOfDonutMultiplier">0</span>
+          <h3>
+            <button id="buyDonutMultiplier">Buy Donut Multiplier</button>
+            <div class="infoBtn" id="buyDonutMultiplierStop"> Donut Multipliers</div>
+          </h3>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="baker">
+
+  </section>
+
+  <section id="counter" class="counter-section">
+    <div class="container">
+      <div class="counter-area">
+        <div class="counter-place wow fadeInLeft" style="visibility: visible; animation-name: fadeInLeft;">
+          <i class="fas fa-history"></i>
+          <span class="counter-number-1" id="priceOfDonutClicker">100</span>
+          <h3>Clicker Price</h3>
+        </div>
+        <div class="counter-place wow fadeInLeft" data-wow-delay="0.3s"
+          style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;">
+          <i class="far fa-laugh-beam"></i>
+          <span class="counter-number-2" id="priceOfDonutMultiplier">10</span>
+          <h3>Multiplier Price</h3>
+        </div>
+        <div class="counter-place wow fadeInRight" data-wow-delay="0.6s"
+          style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInRight;">
+          <i class="fas fa-motorcycle"></i>
+          <span class="counter-number-3" id="timer">0</span>
+          <h3>Timer</h3>
+        </div>
+        <div class="counter-place wow fadeInRight" data-wow-delay="0.9s"
+          style="visibility: visible; animation-delay: 0.9s; animation-name: fadeInRight;">
+          <i class="fas fa-award"></i>
+          <span class="counter-number-4" id="others" >0</span>
+          <h3>Others</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <div class="footer" id="footer">
+    <div class="container">
+      <div class="field">
+        <div class="opening-details">
+          <a href="/" class="foot-Logo">Donut </a>
+
+        </div>
+        <div class="contact-details">
+          <h3>Contact Info</h3>
+
+        </div>
+        <div class="quick-links">
+          <h3>Quick Links</h3>
+
+        </div>
+        <div class="subscribtion">
+          <h3>Subscribtion</h3>
+
+        </div>
+      </div>
+    </div>
+    <p class="copy">© 2022 <span>Donut Clicker</span> - All Right Reserved - <em>Design by Louis II (WCCI)</em></p>
   </div>
+
+
+  <script src="./js/jQuery.js"></script>
+  <script src="./js/smooth-scroll.polyfills.min.js"></script>
+  <script src="./js/wow.min.js"></script>
+  <script src="./js/main.js"></script>
+
 
   <script src="./donut-clicker-app.js"></script>
 </body>
 
 </html>
+

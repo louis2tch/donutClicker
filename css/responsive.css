@@ -1,0 +1,270 @@
+/*
+    Template Name    : Pizzato - Pizza Restaurant Landing Page Template
+    Author           : Available Coder
+    Version          : 1.0
+    Created          : 2021
+    File Description : Respnsive css file of the template
+*/
+
+/* Small */
+@media (max-width: 767px) {
+    button.menu-btn {
+        display: block;
+    }
+    header .container nav ul {
+        width: 300px;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        height: fit-content !important;
+        right: -300px;
+        border-left: 2px solid #f99cc6;
+        border-bottom: 2px solid #f99cc6;
+        transition: 0.5s ease;
+    }
+    header .container nav ul li a {
+        padding: 20px;
+    }
+    .mobile-menu-toggle {
+        right: 0 !important;
+    }
+    .home-slider > div .content {
+        width: 100%;
+        overflow: hidden;
+    }
+    .home .home-slider .content h1 {
+        font-size: 50px;
+        margin-bottom: 10px;
+        margin-top: 50px;
+    }
+    .home .home-slider .content p {
+        font-size: 20px;
+    }
+    .home .home-slider .content a {
+        font-size: 18px;
+    }
+    .home .tns-nav {
+        position: absolute;
+        text-align: center;
+        bottom: 30px;
+        left: 50%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        transform: translateX(-50%);
+    }
+    .home .tns-nav button.tns-nav-active {
+        background-color: var(--sec-color-3);
+        border-color: var(--main-color);
+    }
+    .home .tns-nav button {
+        border: unset;
+        outline: unset;
+        border: 5px solid var(--main-color);
+        cursor: pointer;
+        text-align: center;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        margin-right: 15px;
+        margin-left: 15px;
+        background-color: transparent;
+        transition: 0.75s ease;
+    }
+    .about .field {
+        flex-direction: column;
+    }
+    h1.main-heading span {
+        font-size: 45px;
+    }
+    .menu .menu-field .donuts-menu {
+        flex-basis: 100%;
+        margin-bottom: 20px;
+    }
+    .menu .menu-field .offer {
+        flex-basis: 100% !important;
+        max-width: 450px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .menu p.p-normal-menu {
+        font-size: 20px;
+        padding: 10px;
+    }
+    .menu .menu-field .offer .offer-head h2.offer-name {
+        font-size: 30px;
+    }
+    .menu .menu-field .donuts-menu > div.piece .price {
+        flex-basis: 100px;
+    }
+    .menu .menu-field .offer .offer-time h3 {
+        font-size: 20px;
+        margin-right: 10px;
+    }
+    .grid-gallary {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(7, 250px);
+        grid-template-areas: 'one' 'two' 'three' 'four' 'five' 'six' 'seven';
+        width: 100%;
+        gap: 15px;
+        padding: 15px;
+    }
+    .counter-area > div.counter-place {
+        flex-basis: 100% !important;
+    }
+    .delivery .text p {
+        font-size: 20px;
+    }
+    .delivery .links {
+        flex-direction: column;
+    }
+    .delivery .links a.del-phone {
+        margin-bottom: 20px;
+    }
+    .team .team-box > div.member {
+        flex-basis: 100% !important;
+    }
+    .testimonials .client-slider .review q {
+        text-align: start;
+        font-size: 16px;
+    }
+    .testimonials .text h1 {
+        justify-content: center;
+    }
+    .blog .content .blog-box:last-child {
+        margin: 0 !important;
+    }
+    .blog .content .blog-box {
+        flex-basis: 100% !important;
+        margin-bottom: 20px;
+    }
+    .contact .text h1 {
+        justify-content: center;
+    }
+    .footer .field > div {
+        flex-basis: 100% !important;
+        margin-bottom: 20px;
+    }
+    .footer .field > div.opening-details {
+        order: 1 !important;
+    }
+    .footer .field > div.contact-details {
+        order: 3 !important;
+    }
+    .footer .field > div.quick-links {
+        order: 4 !important;
+        padding-left: 0;
+    }
+    .footer .field > div.subscribtion {
+        order: 2 !important;
+    }
+
+}
+@media (max-width: 450px) {
+    .menu .tns-controls button {
+        width: 30px;
+    }
+}
+@media (max-width: 350px) {
+    h1.main-heading span {
+        font-size: 35px;
+    }
+}
+/* Medium */
+@media (min-width: 992px) {
+
+}
+@media (max-width: 991px) {
+    .menu .menu-field .donuts-menu > div {
+        flex-basis: 100%;
+    }
+    .menu .menu-field .offer {
+        flex-basis: 48%;
+    }
+    .counter-area > div.counter-place {
+        flex-basis: calc(50% - 20px);
+    }
+    .team .team-box > div.member {
+        flex-basis: calc(50% - 20px);
+        margin-bottom: 40px;
+    }
+    .testimonials .field {
+        flex-direction: column;
+    }
+    .testimonials .container {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto;
+        gap: 10px;
+    }
+    .blog .content .blog-box {
+        flex-basis: calc(50% - 20px);
+    }
+    .blog .content .blog-box:last-child {
+        margin: 40px auto;
+    }
+    .contact .field {
+        flex-direction: column;
+    }
+    .contact .field > div {
+        flex-basis: 100% !important;
+    }
+    .contact .contact-box {
+        margin-bottom: 30px;
+    }
+    .footer .field > div {
+        flex-basis: calc(50% - 10px);
+        margin-bottom: 20px;
+    }
+    .footer .field > div.opening-details {
+        order: 1;
+    }
+    .footer .field > div.contact-details {
+        order: 2;
+    }
+    .footer .field > div.quick-links {
+        order: 3;
+        padding-left: 0;
+    }
+    .footer .field > div.subscribtion {
+        order: 4;
+    }
+    .btn-scroll {
+        right: 15px;
+    }
+}
+@media (min-width: 768px) {
+    header nav ul li:last-child {
+        margin-right: 15px;
+    }
+    .home .tns-nav {
+        position: absolute;
+        text-align: center;
+        top: 300px;
+        right: 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        transform: translateY(-25%);
+    }
+    .home .tns-nav button.tns-nav-active {
+        background-color: var(--sec-color-3);
+        border-color: var(--main-color);
+    }
+    .home .tns-nav button {
+        outline: unset;
+        border: 7.5px solid var(--main-color);
+        cursor: pointer;
+        text-align: center;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        background-color: transparent;
+        transition: 0.75s ease;
+    }
+}
