@@ -18,7 +18,14 @@ describe('Donut object', () => {
         const underTest = new Donut('Louis', 0, 0, 100, 0, 10, 100);
         underTest.generateOneDonutByClick();
         expect(underTest.numberOfClicks).toEqual(1);
-        expect(underTest.numberOfDonuts).toEqual(101);
+        expect(Math.round(underTest.numberOfDonuts)).toEqual(101);
+    });
+
+    test('numberOfDonut += Math.pow(1.2, numberOfDonutMultiplier) when any click run?', () => {
+        const underTest = new Donut('Louis', 0, 3, 100, 3, 10, 1);
+        underTest.generateOneDonutByClick();
+        //underTest.generateDonutsByMultipliers();
+        expect(underTest.numberOfDonuts).toEqual(1+1.728);
     });
 
     test('numberOfDonutClicker +=1  and numberOfDonuts -=100,'+ 
@@ -51,11 +58,7 @@ describe('Donut object', () => {
         expect(underTest.numberOfDonuts).toEqual(4);
     });
 
-    test('numberOfDonut += Math.pow(1.2, numberOfDonutMultiplier) when any click run?', () => {
-        const underTest = new Donut('Louis', 0, 3, 100, 3, 10, 1);
-        underTest.generateDonutsByMultipliers();
-        expect(underTest.numberOfDonuts).toEqual(1+1.728);
-    });
+   
 
    
 
